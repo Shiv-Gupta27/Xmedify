@@ -70,10 +70,11 @@ export default function SearchHospital() {
         flexDirection: { xs: "column", md: "row" },
       }}
     >
-      <div id="state">
+      {/* <div id="state"> */}
         <Select
           displayEmpty
           name="state"
+          id="state"
           value={formData.state}
           onChange={handleChange}
           startAdornment={
@@ -94,13 +95,14 @@ export default function SearchHospital() {
             </MenuItem>
           ))}
         </Select>
-      </div>
-      <div id="city">
+      {/* </div> */}
+      {/* <div id="city"> */}
         <Select
           displayEmpty
           name="city"
           value={formData.city}
           onChange={handleChange}
+          id="city"
           startAdornment={
             <InputAdornment position="start">
               <SearchIcon />
@@ -118,7 +120,7 @@ export default function SearchHospital() {
             </MenuItem>
           ))}
         </Select>
-      </div>
+      {/* </div> */}
       <Button
         type="submit"
         variant="contained"
