@@ -73,7 +73,6 @@ export default function SearchHospital() {
       <div id="state">
         <Select
           displayEmpty
-          id="state"
           name="state"
           value={formData.state}
           onChange={handleChange}
@@ -99,7 +98,6 @@ export default function SearchHospital() {
       <div id="city">
         <Select
           displayEmpty
-          id="city"
           name="city"
           value={formData.city}
           onChange={handleChange}
